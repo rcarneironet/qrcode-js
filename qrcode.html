@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Instascan</title>
-    <script type="text/javascript" src="instascan.min.js" ></script>
+    <script type="text/javascript" src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js" ></script>	
   </head>
   <body>
     <video id="preview"></video>
@@ -19,7 +19,7 @@
         Instascan.Camera.getCameras().then(cameras => 
         {
             if(cameras.length > 0){
-                scanner.start(cameras[1]);
+                scanner.start(cameras[0]);
             } else {
                 console.error("Não existe câmera no dispositivo!");
             }
